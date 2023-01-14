@@ -1,0 +1,14 @@
+.button {
+  cursor: pointer;
+  font-family: inherit;
+  border: 0;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: $white-color;
+  background-color: $brand-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+

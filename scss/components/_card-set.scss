@@ -1,0 +1,31 @@
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  margin: 50px 0 0;
+
+  &__item {
+    width: 370px;
+  }
+  &__text {
+    border-right: 1px solid#EEEEEE;
+    border-bottom: 1px solid#EEEEEE;
+    border-left: 1px solid#EEEEEE;
+    padding: 20px 24px;
+  }
+  &__item-title {
+    margin: 0 0 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+  &__item-descr {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: $gray-color;
+  }
+}

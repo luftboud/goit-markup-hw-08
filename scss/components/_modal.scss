@@ -1,0 +1,47 @@
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 528px;
+  height: 100%;
+  max-height: 581px;
+  background-color: $white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: scale(1);
+  opacity: 1;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: auto;
+
+  &__box {
+    padding: 40px 40px 0;
+  }
+  &__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0 0 12px;
+}
+}
+
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $brand-color;
+  }
+}
+.backdrop--is-hidden .modal {
+  transform: scale(0.8);
+}

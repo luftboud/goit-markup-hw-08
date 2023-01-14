@@ -1,0 +1,16 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: $text-color;
+  background-color: $white-color;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+li {
+  list-style-type: none;
+}
+.section {
+  padding: 94px 0;
+}

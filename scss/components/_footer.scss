@@ -1,0 +1,70 @@
+.footer {
+  background-color: $brand-background-color;
+  padding: 60px 0;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+  &__logo {
+    color: $white-color;
+  }
+  &__address {
+    font-style: normal;
+    margin-top: 20px;
+  }
+  &__paragraph {
+    margin: 0 0 9px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $white-color;
+  }
+  &__list {
+    padding: 0;
+    margin: 0;
+  }
+  &__join {
+    color: $white-color;
+    fill: $white-color;
+    margin: 0 93px 0 70px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+  }
+  &__item {
+    margin: 0;
+  }
+  &__socials {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: $white-color;
+  }
+}
+
+.footer__contact {
+  height: 21px;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &-link:hover,
+  &-link:focus {
+    color: $brand-color;
+  }
+}
