@@ -23,8 +23,11 @@
         <a href="./index.html" class="logo header__logo"
           ><span class="logo__span">Web</span>Studio</a
         >
+        <svg class="header__menu" width="40" height="40">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
         <nav class="header__nav">
-          <ul class="header__list">
+          <ul class="header__list header__nav-list">
             <li class="header__item">
               <a href="./index.html" class="header__link header__link--current"
                 >Студія</a
@@ -38,7 +41,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="contacts header__list">
+        <ul class="contacts header__list header__contacts-list">
           <li class="contacts__item">
             <div>
               <a href="mailto:info@devstudio.com" class="contacts__link">
@@ -67,9 +70,14 @@
       <section class="order-section">
         <div class="container">
           <h1 class="order-section__title">
-            Ефективні рішення для вашого бізнесу
+            Ефективні рішення для<br />
+            вашого бізнесу
           </h1>
-          <button class="order-section__button button" type="button" data-modal-open>
+          <button
+            class="order-section__button button"
+            type="button"
+            data-modal-open
+          >
             Замовити послугу
           </button>
         </div>
@@ -399,13 +407,13 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div>
+        <div class="footer__info">
           <a href="./index.html" class="logo footer__logo">
             <span class="logo__span">Web</span>Studio</a
           >
           <address class="footer__address">
             <p class="footer__paragraph">м. Київ, пр-т Лесі Українки, 26</p>
-            <ul class="footer__list">
+            <ul class="footer__list footer__contacts">
               <li class="footer__contact">
                 <a
                   href="mailto:info@devstudio.com"

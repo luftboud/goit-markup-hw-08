@@ -1,5 +1,7 @@
 .contacts__item:not(:last-child) {
-  margin-right: 40px;
+  @include for-desktop-up {
+    margin-right: 30px;
+  }
 }
 .contacts__link {
   display: flex;
@@ -7,14 +9,18 @@
   gap: 10px;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: $gray-color;
   fill: $gray-color;
   transition-property: color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include for-desktop-up {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 
   &:hover,
   &:focus {

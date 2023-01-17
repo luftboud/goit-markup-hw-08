@@ -68,3 +68,76 @@
     color: $brand-color;
   }
 }
+
+@include for-phone-only {
+  .footer {
+    &__container {
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 60px;
+    }
+    &__info {
+      width: 100%;
+    }
+    &__logo {
+      font-size: 24px;
+      line-height: 1.16;
+      display: flex;
+      justify-content: center;
+    }
+    &__paragraph {
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 8px;
+    }
+    &__contact-link {
+      display: flex;
+      justify-content: center;
+    }
+    &__contact:not(:last-child) {
+      margin-bottom: 8px;
+    }
+    &__join {
+      width: 100%;
+      margin: 0;
+    }
+    &__title {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+@media (min-width: 481px) and (max-width: 1199px) {
+  .footer {
+    &__container {
+      justify-content: center;
+      flex-wrap: wrap;
+      column-gap: 165px;
+      row-gap: 60px;
+    }
+    &__logo {
+      font-size: 24px;
+      line-height: 1.16;
+      display: flex;
+      justify-content: center;
+    }
+    &__paragraph {
+      margin-bottom: 8px;
+    }
+    &__contact {
+      display: flex;
+      justify-content: center;
+    }
+    &__contact:not(:last-child) {
+      margin-bottom: 8px;
+    }
+    &__join {
+      margin: 0;
+    }
+    &__title {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
