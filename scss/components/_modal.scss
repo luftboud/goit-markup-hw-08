@@ -1,9 +1,9 @@
 .modal {
   position: relative;
   width: 100%;
-  max-width: 528px;
+  max-width: 450px;
   height: 100%;
-  max-height: 581px;
+  max-height: 609px;
   background-color: $white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -15,18 +15,26 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
 
+  @include for-tablet-lanscape-up {
+    max-width: 528px;
+    max-height: 581px;
+  }
   &__box {
     padding: 40px 40px 0;
   }
   &__title {
-  text-align: center;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin: 0 0 12px;
-}
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0 0 12px;
+
+    @include for-tablet-lanscape-up {
+      line-height: 1.15;
+    }
+  }
 }
 
 .modal__close {

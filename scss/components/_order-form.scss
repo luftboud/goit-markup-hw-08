@@ -107,7 +107,7 @@
     justify-content: center;
     width: 16px;
     height: 15px;
-    margin: 4px 7px 0 0;
+    margin-right: 7px;
     border: 2px solid $text-color;
     fill: transparent;
     border-radius: 2px;
@@ -121,8 +121,13 @@
   &-label {
     position: relative;
     padding-left: 23px;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.167;
     letter-spacing: 0.03em;
+
+    @include for-tablet-lanscape-up {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 }

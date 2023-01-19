@@ -99,4 +99,10 @@
   &__link:focus {
     color: $brand-color;
   }
+
+  &__menu-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
 }
