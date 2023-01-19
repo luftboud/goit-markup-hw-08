@@ -16,6 +16,9 @@
   @include for-desktop-up {
     padding: 200px 0;
   }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/background-image@2x.jpg);
+  }
 
   &__title {
     text-align: center;

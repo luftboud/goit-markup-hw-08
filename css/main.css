@@ -1058,6 +1058,11 @@ li {
     padding: 200px 0;
   }
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .order-section {
+    background-image: url(../images/background-image@2x.jpg);
+  }
+}
 .order-section__title {
   text-align: center;
   margin: 0 auto 30px auto;
