@@ -125,7 +125,7 @@
     line-height: 1.167;
     letter-spacing: 0.03em;
 
-    @include for-tablet-lanscape-up {
+    @include for-tablet-up {
       font-size: 14px;
       line-height: 1.71;
     }

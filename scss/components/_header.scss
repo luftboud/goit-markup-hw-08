@@ -8,11 +8,8 @@
     margin-right: auto;
 
     color: $text-color;
-    @include for-tablet-portrait-up {
+    @include for-tablet-up {
       padding: 26px 0;
-    }
-    @include for-tablet-lanscape-up {
-      margin-right: 93px;
     }
     @include for-desktop-up {
       padding: 24px 0 25px;
@@ -20,13 +17,13 @@
   }
   &__menu {
     display: block;
-    @include for-tablet-portrait-up {
+    @include for-tablet-up {
       display: none;
     }
   }
   &__nav {
     display: none;
-    @include for-tablet-portrait-up {
+    @include for-tablet-up {
       display: block;
       margin-right: auto;
     }
@@ -49,7 +46,7 @@
   }
   &__contacts-list {
     display: none;
-    @include for-tablet-portrait-up {
+    @include for-tablet-up {
       display: flex;
       flex-direction: column;
       gap: 10px;

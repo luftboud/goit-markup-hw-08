@@ -15,7 +15,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
 
-  @include for-tablet-lanscape-up {
+  @include for-tablet-up {
     max-width: 528px;
     max-height: 581px;
   }
@@ -31,7 +31,7 @@
     letter-spacing: 0.03em;
     margin: 0 0 12px;
 
-    @include for-tablet-lanscape-up {
+    @include for-tablet-up {
       line-height: 1.15;
     }
   }
